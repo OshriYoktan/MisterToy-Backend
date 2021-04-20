@@ -48,7 +48,7 @@ app.get('/**', (req, res) => {
 
 
 const logger = require('./services/logger.service')
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3030
 http.listen(port, () => {
     logger.info('Server is running on port: ' + port, 15, 'popo')
 })
